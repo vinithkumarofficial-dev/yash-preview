@@ -12,7 +12,7 @@
 <link rel="preload" as="image" type="image/avif" imagesrcset="../assets/uploads/yash-portrait/5-hero-480.avif 480w, ../assets/uploads/yash-portrait/5-hero-720.avif 720w, ../assets/uploads/yash-portrait/5-hero-1000.avif 1000w" imagesizes="(min-width: 80rem) 480px, 38vw" media="(min-width: 64rem)" fetchpriority="high">
 <style id="yash-fonts">@font-face{font-family:'Fraunces';src:url('../assets/theme/assets/fonts/fraunces-latin-wght-normal.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}@font-face{font-family:'Manrope';src:url('../assets/theme/assets/fonts/manrope-latin-wght-normal.woff2') format('woff2');font-style:normal;font-weight:200 800;font-display:swap}@font-face{font-family:'Fraunces';src:url('../assets/theme/assets/fonts/fraunces-latin-wght-italic.woff2') format('woff2');font-style:italic;font-weight:300 700;font-display:swap}@font-face{font-family:'IBM Plex Mono';src:url('../assets/theme/assets/fonts/ibm-plex-mono-latin-500-normal.woff2') format('woff2');font-style:normal;font-weight:500;font-display:swap}@font-face{font-family:'Manrope Fallback';src:local('Arial');size-adjust:101.5%}@font-face{font-family:'Fraunces Fallback';src:local('Georgia');size-adjust:105.1%}@font-face{font-family:'Fraunces Fallback';src:local('Georgia Italic'),local('Georgia');font-style:italic;size-adjust:97%}</style>
 
-<link rel='stylesheet' id='yash-main-css' href='../assets/theme/dist/assets/main-Biz2ntJP.css' media='all' />
+<link rel='stylesheet' id='yash-main-css' href='../assets/theme/dist/assets/main-u2twihIV.css' media='all' />
 <style>
 .preview-badge{position:fixed;left:16px;bottom:16px;z-index:200;display:flex;align-items:center;gap:8px;min-height:44px;padding:10px 16px;border-radius:999px;background:#111;color:#fff;font:600 14px/1.2 system-ui,sans-serif;letter-spacing:.02em;box-shadow:0 6px 20px rgb(0 0 0 / 35%);text-decoration:none}
 .preview-badge::before{content:'';width:8px;height:8px;border-radius:50%;background:#f5b400}
@@ -165,7 +165,7 @@
 													<fieldset class="matcher__step" data-step="goal" >
 						<legend class="display-3 matcher__question" tabindex="-1">What brings you to Dubai property?</legend>
 						<input type="hidden" name="goal" value="">
-						<ul class="option-list">
+						<ul class="option-list option-list--n4">
 																							<li>
 									<button type="button" class="option" aria-pressed="false" data-answer="investment">
 										<span>Investment</span>
@@ -191,7 +191,7 @@
 														<fieldset class="matcher__step" data-step="budget" hidden>
 						<legend class="display-3 matcher__question" tabindex="-1">What budget are you working with?</legend>
 						<input type="hidden" name="budget" value="">
-						<ul class="option-list">
+						<ul class="option-list option-list--n5">
 																							<li>
 									<button type="button" class="option" aria-pressed="false" data-answer="0-1000000">
 										<span data-aed-min="0" data-aed-max="1000000">Under AED 1M</span>
@@ -222,7 +222,7 @@
 														<fieldset class="matcher__step" data-step="timeline" hidden>
 						<legend class="display-3 matcher__question" tabindex="-1">When would you like to buy?</legend>
 						<input type="hidden" name="timeline" value="">
-						<ul class="option-list">
+						<ul class="option-list option-list--n4">
 																							<li>
 									<button type="button" class="option" aria-pressed="false" data-answer="now">
 										<span>Within 3 months</span>
@@ -248,7 +248,7 @@
 														<fieldset class="matcher__step" data-step="location" hidden>
 						<legend class="display-3 matcher__question" tabindex="-1">Where are you based?</legend>
 						<input type="hidden" name="location" value="">
-						<ul class="option-list">
+						<ul class="option-list option-list--n6">
 																							<li>
 									<button type="button" class="option" aria-pressed="false" data-answer="uae">
 										<span>In the UAE</span>
@@ -466,19 +466,20 @@
 		<div class="opportunities__grid">
 		<div class="opportunities__main">
 					<div class="card empty-state" data-reveal>
-				<p class="mono-label">This week</p>
+				<div class="empty-state__top">
+					<p class="mono-label">This week</p>
+					<span class="permit-badge">
+						<svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M10 2l6 2.5v5c0 4-2.7 6.9-6 8.5-3.3-1.6-6-4.5-6-8.5v-5L10 2z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7 10l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+						DLD permit on every listing					</span>
+				</div>
 				<p class="display-3">Current projects are shared once their advertising permit is in place. Ask me for this week&#039;s shortlist.</p>
 				<ul class="ticks empty-state__points">
 					<li>Every project shown with its DLD advertising permit number</li>
 					<li>Price, payment plan and handover in your currency</li>
 					<li>The numbers run through the calculator below</li>
 				</ul>
-				<a class="button button--primary" href="https://wa.me/971541807777?text=Hi%20Yash%2C%20I%20found%20you%20on%20your%20website%20%28current%20opportunities%29.%20I%20would%20like%20to%20talk%20about%20investing%20in%20Dubai%20property." target="_blank" rel="noopener" data-track="whatsapp_click" data-section="opportunities">Ask for this week&#039;s shortlist</a>
-			</div>
-				</div>
-
-					<aside class="card criteria" aria-labelledby="criteria-title" data-reveal>
-				<svg class="skyline" viewBox="0 0 480 150" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMax meet">
+				<a class="button button--primary empty-state__cta" href="https://wa.me/971541807777?text=Hi%20Yash%2C%20I%20found%20you%20on%20your%20website%20%28current%20opportunities%29.%20I%20would%20like%20to%20talk%20about%20investing%20in%20Dubai%20property." target="_blank" rel="noopener" data-track="whatsapp_click" data-section="opportunities">Ask for this week&#039;s shortlist</a>
+				<svg class="skyline" viewBox="0 0 480 150" aria-hidden="true" focusable="false" preserveAspectRatio="xMinYMax meet">
 	<g class="skyline__grid">
 		<path d="M0 30H480M0 60H480M0 90H480M0 120H480"/>
 	</g>
@@ -489,7 +490,11 @@
 	<path class="skyline__base" d="M0 140H480"/>
 	<path class="skyline__dim" d="M170 146H198M170 143v6M198 143v6"/>
 </svg>
-				<h3 id="criteria-title" class="display-3">How I pick a <em>project.</em></h3>
+			</div>
+				</div>
+
+					<aside class="card criteria" aria-labelledby="criteria-title" data-reveal>
+								<h3 id="criteria-title" class="display-3">How I pick a <em>project.</em></h3>
 				<ol class="criteria__list">
 											<li>
 							<strong>Developer track record</strong>
@@ -514,7 +519,7 @@
 		<p class="disclaimer">Prices and dates are indicative and confirmed at booking.</p>
 	</div>
 </section>
-<section id="calculator" class="section surface-paper calculator" aria-labelledby="calculator-title" data-module="calculator" data-calc="{&quot;price&quot;:1500000,&quot;down&quot;:20,&quot;rent&quot;:90000,&quot;service&quot;:15000,&quot;fee&quot;:4}">
+<section id="calculator" class="section surface-paper calculator" aria-labelledby="calculator-title" data-module="calculator" data-calc="{&quot;price&quot;:1500000,&quot;down&quot;:20,&quot;rent&quot;:90000,&quot;service&quot;:15000,&quot;fee&quot;:4,&quot;agency&quot;:2,&quot;vat&quot;:5,&quot;registration&quot;:4200,&quot;admin&quot;:580,&quot;costs&quot;:true}">
 	<div class="container calculator__grid">
 		<div class="calculator__inputs">
 			<header class="section__head" data-reveal>
@@ -570,23 +575,55 @@
 				</div>
 				<div class="metric">
 					<dt class="mono-label">Cash required</dt>
-					<dd class="numeric" data-calc-out="cash">AED 360,000</dd>
+					<dd class="numeric" data-calc-out="cash">AED 396,280</dd>
 				</div>
 			</dl>
-			<p class="calc-results__basis">
-				Cash required is your down payment plus the 4% DLD transfer fee. Net yield is rent after the service charge.			</p>
+			<div class="calc-costs">
+				<label class="switch">
+					<input type="checkbox" data-calc-costs  checked='checked'>
+					<span class="switch__track" aria-hidden="true"></span>
+					<span>Include typical buying costs</span>
+				</label>
+				<dl class="calc-breakdown" aria-label="Cash required, itemised">
+											<div data-calc-row="down">
+							<dt>Down payment (20%)</dt>
+							<dd class="numeric" data-calc-item="down">AED 300,000</dd>
+						</div>
+											<div data-calc-row="dld">
+							<dt>DLD transfer fee (4%)</dt>
+							<dd class="numeric" data-calc-item="dld">AED 60,000</dd>
+						</div>
+											<div data-calc-row="agency" data-calc-cost>
+							<dt>Agency fee (2%)</dt>
+							<dd class="numeric" data-calc-item="agency">AED 30,000</dd>
+						</div>
+											<div data-calc-row="vat" data-calc-cost>
+							<dt>VAT on agency fee (5%)</dt>
+							<dd class="numeric" data-calc-item="vat">AED 1,500</dd>
+						</div>
+											<div data-calc-row="registration" data-calc-cost>
+							<dt>DLD registration fee</dt>
+							<dd class="numeric" data-calc-item="registration">AED 4,200</dd>
+						</div>
+											<div data-calc-row="admin" data-calc-cost>
+							<dt>DLD admin fee</dt>
+							<dd class="numeric" data-calc-item="admin">AED 580</dd>
+						</div>
+									</dl>
+			</div>
+			<p class="calc-results__basis">Typical fees, confirmed per property. Net yield is rent after the service charge.</p>
 
 			<figure class="calc-chart">
 				<figcaption class="calc-chart__caption">
 					<span class="mono-label">Five-year scenario</span>
 					<span class="calc-chart__legend">
 						<span class="calc-chart__key calc-chart__key--bar">Net rent collected</span>
-						<span class="calc-chart__key calc-chart__key--line">Cash you put in <strong class="numeric" data-calc-cash-key>AED 360,000</strong></span>
+						<span class="calc-chart__key calc-chart__key--line">Cash you put in <strong class="numeric" data-calc-cash-key>AED 396,280</strong></span>
 					</span>
 				</figcaption>
 				<div class="calc-chart__plot" data-calc-chart role="img" aria-label="Bar chart of net rent collected over five years, compared with the cash required"></div>
 				<p class="calc-chart__summary" data-calc-chart-text>
-					After five years: AED 375,000 of net rent collected, against AED 360,000 of cash put in.				</p>
+					After five years: AED 375,000 of net rent collected, against AED 396,280 of cash put in.				</p>
 			</figure>
 
 			<div class="calc-unlock">
@@ -779,7 +816,7 @@
 	</span>
 	<span class="social-card__body">
 		<span class="social-card__title">Waterfront. Heart of Dubai. Full Dubai skyline view.</span>
-					<span class="social-card__meta mono-label">8 Oct 2026 · 95 views</span>
+					<span class="social-card__meta mono-label">8 Oct 2026 · 96 views</span>
 				<span class="sr-only">
 			Play on YouTube		</span>
 	</span>
@@ -1192,11 +1229,7 @@
 													<li>Clear next steps, with no obligation to buy.</li>
 											</ul>
 				
-				<p class="book-card__reply">
-					<span class="mono-label">Typical reply</span>
-											<span class="pill pill--pending">Reply time being confirmed</span>
-									</p>
-
+								
 				<div class="book__actions">
 					<a class="button button--primary" href="https://wa.me/971541807777?text=Hi%20Yash%2C%20I%20found%20you%20on%20your%20website%20%28book%20a%20meeting%29.%20I%20would%20like%20to%20talk%20about%20investing%20in%20Dubai%20property." target="_blank" rel="noopener" data-track="whatsapp_click" data-section="book">WhatsApp Yash</a>
 					<a class="button button--ghost" href="tel:+971541807777" data-track="phone_click" data-section="book">Call now</a>
@@ -1256,7 +1289,7 @@
 <a class="wa-float" href="https://wa.me/971541807777?text=Hi%20Yash%2C%20I%20found%20you%20on%20your%20website%20%28floating%20button%29.%20I%20would%20like%20to%20talk%20about%20investing%20in%20Dubai%20property." target="_blank" rel="noopener" data-track="whatsapp_click" data-section="floating-button" aria-label="WhatsApp Yash">
 	<svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3Z"/></svg>
 </a>
-<script id="yash-main-js-module" src="../assets/theme/dist/assets/main-DJ_hucws.js" type="module"></script>
+<script id="yash-main-js-module" src="../assets/theme/dist/assets/main-D-c8Yx2e.js" type="module"></script>
 <a class="preview-badge" href="../index.html" title="Back to all options">Design preview · Option C</a>
 <div class="preview-toast" role="status" aria-live="polite"></div>
 <script>
