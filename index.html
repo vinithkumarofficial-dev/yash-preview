@@ -26,6 +26,7 @@
 	.video-link:focus-visible{outline:2px solid #e05a5a;outline-offset:3px;border-radius:4px}
 	@media (min-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
 	@media (min-width:1200px){.grid{grid-template-columns:repeat(4,1fr)}}
+	.option:first-child .card{border-color:#e05a5a}
 	.card{display:flex;flex-direction:column;overflow:hidden;border:1px solid rgb(245 242 240/14%);border-radius:12px;background:#141414;color:inherit;text-decoration:none;transition:transform .2s,border-color .2s}
 	.card:hover,.card:focus-visible{transform:translateY(-4px);border-color:#e05a5a}
 	.card:focus-visible{outline:2px solid #e05a5a;outline-offset:3px}
@@ -42,29 +43,37 @@
 	<main>
 		<p class="eyebrow">Design preview · Not the live site</p>
 		<h1>Yash Kumthekar <em>website preview</em></h1>
-		<p class="intro">Three colour options for the same page. Open each one on your phone and on a laptop, scroll to the end, and tell us which feels right.</p>
+		<p class="intro">Option D, 3X Signature, is the chosen design. Open it on your phone and on a laptop and scroll to the end. The earlier options are kept below for reference.</p>
 		<div class="grid">
+		<div class="option">
+		<a class="card" href="d/index.html">
+			<img src="thumbs/d.jpg" alt="Option D hero preview" width="1440" height="900" loading="lazy">
+			<span class="card__body">
+				<span class="card__kicker">Option D <span class="tag">Chosen design</span></span>
+				<span class="card__title">3X Signature</span>
+				<span class="card__line">The chosen design: the same simple, cinematic flow as the 3X Capital CEO site, with Yash's content.</span>
+			</span>
+		</a>
+		</div>
 		<div class="option">
 		<a class="card" href="a/index.html">
 			<img src="thumbs/a.jpg" alt="Option A hero preview" width="1440" height="900" loading="lazy">
 			<span class="card__body">
 				<span class="card__kicker">Option A</span>
 				<span class="card__title">Noir and Oxblood</span>
-				<span class="card__line">Near-black with deep oxblood red. Bold, high-contrast and confident.</span>
+				<span class="card__line">Earlier option, kept for reference.</span>
 			</span>
 		</a>
-		<a class="video-link" href="a-video/index.html">See it with a video hero <span aria-hidden="true">→</span></a>
 		</div>
 		<div class="option">
 		<a class="card" href="b/index.html">
 			<img src="thumbs/b.jpg" alt="Option B hero preview" width="1440" height="900" loading="lazy">
 			<span class="card__body">
-				<span class="card__kicker">Option B <span class="tag">Recommended</span></span>
+				<span class="card__kicker">Option B</span>
 				<span class="card__title">Ink Navy and Champagne</span>
-				<span class="card__line">Deep navy with champagne gold. Calm, private-wealth feel, our recommendation.</span>
+				<span class="card__line">Earlier option, kept for reference.</span>
 			</span>
 		</a>
-		<a class="video-link" href="b-video/index.html">See it with a video hero <span aria-hidden="true">→</span></a>
 		</div>
 		<div class="option">
 		<a class="card" href="c/index.html">
@@ -72,24 +81,12 @@
 			<span class="card__body">
 				<span class="card__kicker">Option C</span>
 				<span class="card__title">Ivory, Navy and Gold</span>
-				<span class="card__line">Light ivory with navy and gold. Bright, airy and easy to read in daylight.</span>
+				<span class="card__line">Earlier option, kept for reference.</span>
 			</span>
 		</a>
-		<a class="video-link" href="c-video/index.html">See it with a video hero <span aria-hidden="true">→</span></a>
-		</div>
-		<div class="option">
-		<a class="card" href="d/index.html">
-			<img src="thumbs/d.jpg" alt="Option D hero preview" width="1440" height="900" loading="lazy">
-			<span class="card__body">
-				<span class="card__kicker">Option D</span>
-				<span class="card__title">3X Signature</span>
-				<span class="card__line">Same sections and cinematic style as the 3X Capital CEO site, with Yash's content.</span>
-			</span>
-		</a>
-		<a class="video-link" href="d-video/index.html">See it with a video hero <span aria-hidden="true">→</span></a>
 		</div>
 		</div>
-		<p class="note">Enquiry forms are switched off in this preview. Text is a first draft, and a few licence details are still being added.</p>
+		<p class="note">Enquiry forms and meeting bookings are switched off in this preview. Text is a first draft, and a few licence details are still being added.</p>
 	</main>
 </body>
 </html>
