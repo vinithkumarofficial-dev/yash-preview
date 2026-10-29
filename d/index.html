@@ -536,9 +536,10 @@
 		timer = setTimeout(function () { toast.classList.remove('is-on'); }, 2600);
 	}
 	// Quiz answers, form steps, the calculator and project hand-offs all work.
-	// Only sending an enquiry (form submit), the breakdown unlock and
-	// Calendly (inline or popup) are switched off, so no real meeting is booked.
-	var blocked = '[data-lead-unlock], [data-calendly-load], [data-calendly-popup], [data-preview-disabled]';
+	// Only sending an enquiry (form submit), the breakdown unlock and links to
+	// pages that are not in the preview are switched off. Calendly, WhatsApp and
+	// Call are not enquiry forms, so they work exactly as on the live site.
+	var blocked = '[data-lead-unlock], [data-preview-disabled]';
 	document.addEventListener('click', function (e) {
 		var el = e.target.closest && e.target.closest(blocked);
 		if (el) { e.preventDefault(); e.stopPropagation(); say(); }
